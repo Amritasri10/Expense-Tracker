@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Expense Tracker</h2>
+    <h4>Your Balance</h4>
+    <h1 id="balance">$0.00</h1>
+
+    <div class="inc-exp-container">
+      <div>
+        <h4>Income</h4>
+        <p id="money-plus" class="money plus">0.00</p>
+      </div>
+      <div>
+        <h4>Expense</h4>
+        <p id="money-minus" class="money minus">0.00</p>
+      </div>
+    </div>
+
+    <!-- Flex container for horizontal sections -->
+    <div class="sections-row">
+
+       <!-- Add New Transaction Section -->
+      <div class="section-box">
+        <h3>Add new transaction</h3>
+        <form id="form">
+          <div class="form-control">
+            <label for="text">Text</label>
+            <input type="text" id="text" placeholder="Enter text..." required />
+          </div>
+          <div class="form-control">
+            <label for="type">Type</label>
+            <select id="type">
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" placeholder="Enter amount..." required />
+          </div>
+          <button class="btn">Add transaction</button>
+        </form>
+      </div>
+
+      <!-- History Section -->
+      <div class="section-box">
+        <h3>History</h3>
+        <ul id="list" class="list"></ul>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
