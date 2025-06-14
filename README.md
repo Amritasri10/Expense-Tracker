@@ -62,3 +62,7 @@ Simply open the ```index.html``` file in your web browser.
 This project is open-source and available under the MIT License.
 
 ---
+
+## 🙌 Contact
+
+[LinkedIn](https://www.linkedin.com/in/amrita-srivastava10/) | [GitHub](https://github.com/Amritasri10)
